@@ -5,7 +5,7 @@ import dropDownArrowIcon from "../../assets/dropDownArrowIcon.png";
 
 const ReactDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState("");
   const body = document.querySelector("body");
   body.addEventListener("click", () => {
     setIsOpen(false);
@@ -18,7 +18,7 @@ const ReactDropdown = () => {
           type="text"
           name="text"
           id="text"
-          value={value}
+          defaultValue={value}
           onClick={(e) => {
             setIsOpen(!isOpen);
             e.stopPropagation();
@@ -38,19 +38,16 @@ const ReactDropdown = () => {
         >
           {strings.dropdownItems.map((item, index) => {
             return (
-              <>
-                <div
-                  id={index}
-                  key={index}
-                  className={`${SCSS.dropdownItem}`}
-                  onClick={(item, index) => {
-                    setIsOpen(!isOpen);
-                    setValue(item.target.innerText);
-                  }}
-                >
-                  {item}
-                </div>
-              </>
+              <div
+                key={index}
+                className={`${SCSS.dropdownItem}`}
+                onClick={(item) => {
+                  setIsOpen(!isOpen);
+                  setValue(item.target.innerText);
+                }}
+              >
+                {item}
+              </div>
             );
           })}
         </div>

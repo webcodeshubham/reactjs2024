@@ -56,16 +56,13 @@ const VanillaDropdown = () => {
         <div className={`${SCSS.dropDownOverlay}`}>
           {strings.dropdownItems.map((item, index) => {
             return (
-              <>
-                <div
-                  id={index}
-                  key={index}
-                  className={`${SCSS.dropdownItem}`}
-                  onClick={(item, index) => selectValue(item, index)}
-                >
-                  {item}
-                </div>
-              </>
+              <div
+                key={index}
+                className={`${SCSS.dropdownItem}`}
+                onClick={(item, index) => selectValue(item, index)}
+              >
+                {item}
+              </div>
             );
           })}
         </div>
