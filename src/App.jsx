@@ -1,6 +1,7 @@
 import SCSS from "./App.module.scss";
-import VanillaDropdown from "./components/Dropdown/VanillaDropdown";
+// import VanillaDropdown from "./components/Dropdown/VanillaDropdown";
 // import ReactDropdown from "./components/Dropdown/ReactDropdown";
+import VanillaModal from "./components/Modal/VanillaModal";
 
 // ? Arrow Functions
 const App = () => {
@@ -8,8 +9,9 @@ const App = () => {
     <>
       <div className={`${SCSS.appContainer}`}>
         {/* <h1>Hello! Everyone</h1> */}
-        <VanillaDropdown />
+        {/* <VanillaDropdown /> */}
         {/* <ReactDropdown /> */}
+        <VanillaModal />
       </div>
     </>
   );
