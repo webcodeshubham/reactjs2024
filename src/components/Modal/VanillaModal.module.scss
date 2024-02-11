@@ -1,0 +1,73 @@
+.modalContainer {
+  position: relative;
+  .openModalBtn {
+    padding: 12px 30px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: azure;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    &:hover {
+      background-color: black;
+      color: azure;
+    }
+  }
+  .overlayScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal {
+    padding: 16px 32px;
+    border-radius: 10px;
+    background-color: darkmagenta;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    z-index: 3;
+    &.show {
+      display: block;
+    }
+    .modalHeading {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-align: center;
+      color: white;
+    }
+    .modalDesc {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-align: center;
+      color: white;
+    }
+    .closeModalBtn {
+      padding: 12px 24px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: azure;
+      &:hover {
+        background-color: black;
+        color: azure;
+      }
+    }
+  }
+}
