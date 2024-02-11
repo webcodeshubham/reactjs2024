@@ -1,0 +1,18 @@
+{
+  "inputPlaceholder": "Select a fruit 🍎🍐🍇🍍🍓🥭",
+  "imgAltArrow": "dropDownArrowIcon",
+  "imgAltCross": "dropDownCrossIcon",
+  "dropdownItems": [
+    "Apple🍎",
+    "Banana🍌",
+    "Orange🍊",
+    "Pineapple🍍",
+    "Mango🥭",
+    "Watermelon🍉",
+    "Peach🍑",
+    "Cherry🍒",
+    "Grapes🍇",
+    "Strawberry🍓",
+    "Lemon🍋"
+  ]
+}
