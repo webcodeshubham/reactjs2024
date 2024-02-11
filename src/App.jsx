@@ -2,6 +2,7 @@ import SCSS from "./App.module.scss";
 import VanillaDropdown from "./components/Dropdown/VanillaDropdown";
 // import ReactDropdown from "./components/Dropdown/ReactDropdown";
 
+// ? Arrow Functions
 const App = () => {
   return (
     <>
