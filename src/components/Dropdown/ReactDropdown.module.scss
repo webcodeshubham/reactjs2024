@@ -7,7 +7,7 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    background-color: azure;
+    background-color: rgb(10, 157, 157);
     margin-bottom: 5px;
     white-space: nowrap;
     overflow: hidden;
@@ -52,7 +52,7 @@
 
   .dropDownOverlay {
     position: absolute;
-    background-color: transparent;
+    background-color: rgb(10, 157, 157);
     box-shadow: -10px 10px 40px rgba(255, 245, 244, 0.5);
     padding: 14px 0 10px;
     border-radius: 6px;
@@ -62,11 +62,13 @@
     min-height: 240px;
     overflow-y: auto;
     display: none;
+    transition: all 0.3s ease-in-out;
     @media screen and (max-width: 768px) {
       width: 260px;
     }
     &.show {
       display: block;
+      transition: all 0.3s ease-in-out;
     }
     &::-webkit-scrollbar {
       width: 4px !important;

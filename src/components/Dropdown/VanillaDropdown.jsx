@@ -44,6 +44,10 @@ const VanillaDropdown = () => {
             openDropDown();
             e.stopPropagation();
           }}
+          onBlur={(e) => {
+            openDropDown();
+            e.stopPropagation();
+          }}
           className={`${SCSS.inputField}`}
           placeholder={strings.inputPlaceholder}
         />

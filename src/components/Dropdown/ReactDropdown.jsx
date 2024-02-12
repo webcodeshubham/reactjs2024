@@ -23,6 +23,10 @@ const ReactDropdown = () => {
             setIsOpen(!isOpen);
             e.stopPropagation();
           }}
+          onBlur={(e) => {
+            setIsOpen(!isOpen);
+            e.stopPropagation();
+          }}
           className={`${SCSS.inputField}`}
           placeholder={strings.inputPlaceholder}
         />
