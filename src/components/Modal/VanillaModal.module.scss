@@ -42,6 +42,10 @@
     z-index: 3;
     &.show {
       display: block;
+      animation-name: topToCenter;
+      animation-duration: 0.8s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-out;
     }
     .modalHeading {
       font-size: 24px;
@@ -69,5 +73,17 @@
         color: azure;
       }
     }
+  }
+}
+
+
+// animations
+
+@keyframes topToCenter {
+  0% {
+    transform: translate(-50%, -1000%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
   }
 }

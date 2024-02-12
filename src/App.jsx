@@ -1,7 +1,7 @@
 import SCSS from "./App.module.scss";
-import VanillaDropdown from "./components/Dropdown/VanillaDropdown";
+// import VanillaDropdown from "./components/Dropdown/VanillaDropdown";
 // import ReactDropdown from "./components/Dropdown/ReactDropdown";
-// import VanillaModal from "./components/Modal/VanillaModal";
+import VanillaModal from "./components/Modal/VanillaModal";
 // import ReactModal from "./components/Modal/ReactModal";
 // import VanillaToggleSwitch from "./components/ToggleSwitch/VanillaToggleSwitch";
 
@@ -11,9 +11,9 @@ const App = () => {
     <>
       <div className={`${SCSS.appContainer}`}>
         {/* <h1>Hello! Everyone</h1> */}
-        <VanillaDropdown />
+        {/* <VanillaDropdown /> */}
         {/* <ReactDropdown /> */}
-        {/* <VanillaModal /> */}
+        <VanillaModal />
         {/* <ReactModal /> */}
        {/* <VanillaToggleSwitch className={`${SCSS.appContainer}`} /> */}
       </div>

@@ -4,11 +4,6 @@ import SCSS from "./ReactModal.module.scss";
 const ReactModal = () => {
   const [showModal, setShowModal] = useState(false);
 
-  // const body = document.querySelector("body");
-  // body.addEventListener("click", () => {
-  //   setShowModal(!showModal);
-  // });
-
   useEffect(() => {
     const Overlay = document.querySelector(`.${SCSS.overlayScreen}`);
     Overlay.addEventListener("click", () => {

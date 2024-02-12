@@ -17,8 +17,8 @@ const VanillaToggleSwitch = ({ className }) => {
   }
   return (
     <>
-    <div className={`${SCSS.toggleSwitchContainer}`}>
-      <div className={`${SCSS.toggle}`} onClick={toggleOn}></div>
+    <div className={`${SCSS.toggleSwitchContainer}`} onClick={toggleOn}>
+      <div className={`${SCSS.toggle}`} onClick={(e) => {e.stopPropagation();toggleOn()}}></div>
     </div>
     </>
   )
